@@ -1,0 +1,134 @@
+body,html {
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+#toolbox {
+	float: left;
+	background-color: rgb(247, 247, 247);
+}
+#ppp {
+	cursor: pointer;
+	margin-top: -15px;
+	user-select: none;
+}
+#ppp:hover {
+	background-color: lightgreen;
+}
+.button {
+	cursor: move;
+	user-select: none;
+	border: 1px solid grey;
+	width:auto;
+	height: auto;
+	font-family: Sans Serif;
+	margin-top: 1px;
+	margin-left: 1px;
+	background-color: rgb(221, 221, 221);
+	border-color: rgb(128, 128, 128);
+}
+.text {
+	font-family: Sans Serif;
+	user-select: none;
+	margin-top: 0px;
+	width: auto;
+	cursor: move;
+}
+#p_element {
+	margin-left: 10px;
+}
+#top {
+	width: 100%;
+	height: 5%;
+	box-sizing: border-box;
+	border-bottom: 1px solid black;
+}
+#top span {
+	border-right: 1px solid black;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#settingsbox {
+	width: 500px;
+}
+#settingsbox input {
+	float: right;
+}
+#settingsbox span {
+	float: left;
+}
+#code {
+	position: absolute;
+	top: 5%;
+	left: 0px;
+	width: 100%;
+	height: 95%;
+	background-color: white;
+	display: none;
+}
+#code textarea {
+	width: 99%;
+	resize: none;
+	border: transparent;
+	height: 98%;
+	outline: none;
+	tab-size: 4;
+}
+#top button {
+	height: 100%;
+	border: 1px solid black;
+	outline: none;
+	cursor: pointer;
+}
+#top button:hover {
+	text-decoration: underline;
+}
+#run {
+	background-color: lightgreen;
+	border: 1px solid black;
+}
+.window {
+	width: 60%;
+	height: 95%;
+	float: left;
+	box-sizing: border-box;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+}
+#properties {
+	float: right;
+	background-color: rgb(247, 247, 247);
+}
+#settings {
+	position: absolute;
+	top: 5%;
+	left: 0px;
+	width: 100%;
+	height: 95%;
+	background-color: white;
+	display: none;
+	font: Sans Serif;
+}
+#settings h1 {
+	margin-top: 0px;
+}
+.sidebar {
+	width: 20%;
+	height: 95%;
+}
+.sidebar #p {
+	background-color: rgb(247,239,106);
+	margin-top: 0px;
+}
+#properties input {
+	width: 13vh;
+	float: right;
+}
+#properties #pp {
+	float: left;
+	margin: 0;
+}
+
+
+

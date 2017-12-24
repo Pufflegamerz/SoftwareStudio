@@ -1,0 +1,68 @@
+<!-- 
+Started 12/23/17
+emulate window in editor
+
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Software Studio</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script type="text/javascript" src="javascript.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body onload='properties("window");designer()'>
+<div id="top">
+	<button class="button1" id="designer" onclick="designer()">Designer</button>
+	<button class="button1" id="code1" onclick="code()">Code</button>
+	<button class="button1" id="settings1" onclick="settings()">Settings</button>
+	<span></span>
+	<button id="run" onclick="run()">Run</button>
+</div>
+<div id="toolbox" class="sidebar">
+	<p id="p">Toolbox</p>
+	<p id="ppp" onclick="button()">Button</p>
+	<p id="ppp" onclick="text()">Label</p>
+</div>
+<div class="window" id="window">
+	
+</div>
+<div id="properties" class="sidebar" onkeydown="save_p()" onkeyup="save_p()">
+	<p id="p">Properties</p>
+	<b><span id="p_element"></span></b>
+	<br>
+	<br>
+	<div>
+		<p id="pp">Name</p><input id="name">
+	</div>
+	<br>
+	<br>
+	<div>
+		<p id="pp">Text</p><input id="text">
+	</div>
+	<br>
+	<button onclick="dele()">Delete</button>
+</div>
+<div id="settings">
+	<h1>Settings</h1>
+	<div id="settingsbox">
+		<span>App Name</span><input id="appname" value="My First App">
+		<br><br>
+		<span>Window width</span><input id="windowheight" value="500">
+		<br><br>
+		<span>Window height</span><input id="windowwidth" value="500">
+		<br><br>
+		<span>Window icon</span><input type="file" id="windowicon">
+	</div>
+</div>
+<div id="code">
+	<textarea spellcheck="false" id="javascriptcode">
+onclick("element0",function() {
+	alert("Hello, World!");
+});
+	</textarea>
+</div>
+</body>
+</html>
