@@ -1,3 +1,3 @@
 function onclick(id,code) {
-	document.getElementById(id).setAttribute("onclick",code);
+	document.getElementById(id).addEventListener("click", code);
 }
